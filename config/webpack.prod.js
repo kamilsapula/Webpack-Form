@@ -30,6 +30,6 @@ module.exports = webpackMerge(config, {
       ENV: JSON.stringify('production')
     }),
 
-    new ExtractTextPlugin('./public/css/[name].[chunkhash].css')
+    new ExtractTextPlugin('css/[name].[chunkhash].css')
   ]
 });

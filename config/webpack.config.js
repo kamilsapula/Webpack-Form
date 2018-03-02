@@ -11,8 +11,8 @@ module.exports = {
     },
   
     output: {
-      filename: '[name].[chunkhash].js',
-      path:  helpers.absolutePath('public/js')
+      filename: 'js/[name].[chunkhash].js',
+      path:  helpers.absolutePath('public')
     },
   
     module: {
@@ -38,7 +38,7 @@ module.exports = {
             "Waves": "node-waves"
         }),
       
-        new clearWebpackPlugin(['public/js'], {
+        new clearWebpackPlugin(['public'], {
             root: helpers.absolutePath(''),
             verbose: true
         })
